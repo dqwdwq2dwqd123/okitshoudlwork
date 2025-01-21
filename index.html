@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Random quiz for Maria ❤️</h1>
+
+      <p class="question" id="question-1">1. Who is My favorite person?</p>
+      <div class="options" id="options-1">
+        <button onclick="checkAnswer(1, true)">Maria</button>
+        <button onclick="checkAnswer(1, false)">Anyone else</button>
+      </div>
+
+      <p class="question hidden" id="question-2">
+        2. What is My favorite homemade food?
+      </p>
+      <div class="options hidden" id="options-2">
+        <button onclick="checkAnswer(2, true)">Pasta</button>
+        <button onclick="checkAnswer(2, false)">Pizza</button>
+      </div>
+
+      <p class="question hidden" id="question-3">3. What day did we meet?</p>
+      <div class="options hidden" id="options-3">
+        <button onclick="checkAnswer(3, true)">August 4, 2024</button>
+        <button onclick="checkAnswer(3, false)">July 10, 2024</button>
+      </div>
+
+      <p class="question hidden" id="question-4">
+        4. Which song reminds me of you?
+      </p>
+      <div class="options hidden" id="options-4">
+        <button onclick="checkAnswer(4, true)">Die With a Smile</button>
+        <button onclick="checkAnswer(4, false)">
+          Shape of You by Ed Sheeran
+        </button>
+      </div>
+
+      <p class="question hidden" id="question-5">
+        5. Where is our dream honeymoon spot?
+      </p>
+      <div class="options hidden" id="options-5">
+        <button onclick="checkAnswer(5, true)">The Maldives</button>
+        <button onclick="checkAnswer(5, false)">Dubai</button>
+      </div>
+
+      <p class="question hidden" id="question-6">
+        6. Where did we get our Khalid from?
+      </p>
+      <div class="options hidden" id="options-6">
+        <button onclick="checkAnswer(6, true)">HMV</button>
+        <button onclick="checkAnswer(6, false)">Primark</button>
+      </div>
+
+      <p class="question hidden" id="question-7">
+        7. Where was our first proper kiss?
+      </p>
+      <div class="options hidden" id="options-7">
+        <button onclick="checkAnswer(7, true)">Leonardo Inn</button>
+        <button onclick="checkAnswer(7, false)">Wingstop</button>
+      </div>
+
+      <div id="final-message" class="hidden">
+        <p id="valentine-question">Will you be my Valentine? 💖</p>
+        <div class="final-options hidden" id="final-buttons">
+          <button id="yes-btn" onclick="finalYes()">Yes 💖</button>
+          <button id="no-btn" onclick="finalNo()">No 💔</button>
+        </div>
+      </div>
+
+      <p id="valentine-response" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

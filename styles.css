@@ -1,0 +1,101 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffc1cc, #ffe4e9);
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    background: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px 30px;
+    width: 350px;
+    border: 2px solid #ff8fa3;
+  }
+  
+  /* Header */
+  h1 {
+    color: #ff4d6d;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Question Styling */
+  .question {
+    font-size: 18px;
+    color: #ff4d6d;
+    margin: 15px 0;
+  }
+  
+  /* Buttons for Questions */
+  .options button,
+  .final-options button {
+    background-color: #ffb6c1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s;
+  }
+  
+  .options button:hover,
+  .final-options button:hover {
+    background-color: #ff8fa3;
+  }
+  
+  /* "Yes" Button */
+  #yes-btn {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  #yes-btn:hover {
+    background-color: #ff4d6d;
+  }
+  
+  /* "No" Button */
+  #no-btn {
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  #no-btn:hover {
+    background-color: #e63950;
+  }
+  
+  /* Response Message */
+  #valentine-response {
+    font-size: 18px;
+    color: #ff4d6d;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
